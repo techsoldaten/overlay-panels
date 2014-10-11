@@ -1,0 +1,36 @@
+{
+  "name": "overlay panels",
+  "title": "jQuery Overlay Panels",
+  "description": "Creates a set of panels that appear above an overlay. Similar to a modal but with multiple windows.",
+  "keywords": [
+    "jquery",
+    "overlay",
+    "panels",
+    "plugins"
+  ],
+  "version": "1",
+  "author": {
+    "name": "Michael Haggerty",
+    "email": "mhaggerty@trellon.com",
+    "url": "https://github.com/techsoldaten"
+  },
+  "maintainers": [
+    {
+      "name": "Michael Haggerty",
+      "email": "mhaggerty@trellon.com",
+      "url": "https://github.com/techsoldaten"
+    },
+  ],
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "http://www.gnu.org/licenses"
+    }
+  ],
+  "bugs": "https://github.com/techsoldaten/overlay-panels/issues",
+  "docs": "https://github.com/techsoldaten/overlay-panels#readme",
+  "download": "https://github.com/techsoldaten/overlay-panels/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}
