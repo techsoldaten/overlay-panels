@@ -1,0 +1,16 @@
+{
+  "name": "Overlay Panels",
+  "version": "1",
+  "homepage": "http://jqueryboilerplate.com",
+  "authors": [
+    "Michael Haggerty <mhaggerty@trellon.com>"
+  ],
+  "description": "Creates a set of panels that appear above an overlay. Similar to a modal but with multiple windows.",
+  "main": "src/jquery.overlayPanels.js",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin"
+  ],
+  "license": "GPL"
+}
