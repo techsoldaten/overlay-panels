@@ -1,0 +1,36 @@
+{
+    "name": "overlaypanels",
+    "title": "Overlay Panels",
+    "description": "A jump-start for jQuery plugins development.",
+    "keywords": [
+        "jquery",
+        "boilerplate",
+        "plugins"
+    ],
+    "version": "1.0",
+    "author": {
+        "name": "Michael Haggerty",
+        "email": "mhaggerty@trellon.com",
+        "url": "https://github.com/techsoldaten"
+    },
+    "maintainers": [
+        {
+            "name": "Michael Haggerty",
+	        "email": "mhaggerty@trellon.com",
+            "url": "https://github.com/techsoldaten"
+        },
+    ],
+    "licenses": [
+        {
+            "type": "GPL",
+            "url": "https://www.gnu.org/licenses/gpl-2.0.html"
+        }
+    ],
+    "bugs": "https://github.com/techsoldaten/overlay-panels/issues",
+    "homepage": "https://github.com/techsoldaten/overlay-panels",
+    "docs": "https://github.com/techsoldaten/overlay-panels",
+    "download": "https://github.com/techsoldaten/overlay-panels/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
