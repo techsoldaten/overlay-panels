@@ -118,9 +118,19 @@
             pos = { xpos: 0, ypos: 0 };
           } else {
             cover = $(cover);
+            // this doesn't work well on Firefox
+            // b/c we have margin auto on the sides
+            // trying jsizes
+            // w = cover.outerWidth(true);
+            // margins = cover.margin();
+            offset = cover.offset();
+            
+            // w = cover.width() + margins.left + margins.right;
+            
+            // this gives an accurate value on firefox
+            w = cover.width() + offset.left*2;
             h = cover.outerHeight(true);
-            w = cover.outerWidth(true);
-            pos = cover.position();
+            pos = cover.offset();
           };
           
           // set dimensions for the overlay
@@ -128,7 +138,9 @@
             height: h,
             width: w,
             top: pos.top + "px",
-            left: pos.left + "px"
+            // @todo: this is a hack
+            // we need to get the positioning right for this to work properly
+            left: "0px"
           });
           
           // Display the overlay
