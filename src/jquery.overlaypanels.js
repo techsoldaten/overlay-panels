@@ -297,12 +297,16 @@
         // Hides all overlays and panels
         // Associated with the ESC key and the overlay
         hideOverlay: function(ev){
-          var ol = ev.data.data.overlay, settings = ol.settings, o = $('#' + settings.mainOverlay), p1 = $('#' + settings.opPanelOne), p2 = $('#' + settings.opPanelTwo), clickEvent = ev.data.clickEvent;
+          var ol = ev.data.data.overlay, settings = ol.settings, o = $('#' + settings.mainOverlay), 
+          p1 = $('#' + settings.opPanelOne), p2 = $('#' + settings.opPanelTwo), 
+          clickEvent = ev.data.clickEvent, triggerClass = settings.opPanelTwoClass;
           
           if (clickEvent || ev.keyCode == 27) { 
             // this gets rid of the keyup function
             $(document).off('keyup.hideOverlay');
+
             // hide panel two
+            $(opPanelTwoClass).removeClass(opPanelTwoClass);
             if(settings.opPanelTwoHidefx === false){
               ol.hideOverlayfx(p2);
             } else {
