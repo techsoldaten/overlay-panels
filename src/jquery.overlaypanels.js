@@ -32,6 +32,7 @@
         opPanelContent:     false,                  // the content that appears in panel one when triggered. Defaults to false, required.
         opPanelTwoTrigger:  'li',   // valid css selector for content that appears in the second panel.
         opPanelTwoSelector: '.panel-two-content',   // valid css selector for content that appears in the second panel.
+        opPanelTwoClass:    '.panel-two-on',        // valid css selector for content that appears in the second panel.
         mainOverlayfx:      false,                  // effect for overlay coming into view
         opPanelOnefx:       false,                  // effect for panel one coming into view
         opPanelTwofx:       false,                  // effect for panel two coming into view
@@ -236,7 +237,14 @@
         showPanelTwo: function (ev) {
           
           var panelOptions, P1Pos, settings = ev.data.overlay.settings, overlay = $('#' + settings.opPanelTwo), 
-          panelOne = $('#' + settings.opPanelOne), cover = settings.overlayCover, displayFx = settings.opPanelTwofx;
+          panelOne = $('#' + settings.opPanelOne), cover = settings.overlayCover, displayFx = settings.opPanelTwofx,
+          triggerClass = settings.opPanelTwoClass;
+          
+          
+          // put the class on the triggering element
+          if($(this).hasClass(triggerClass) == false {
+            $(this).addClass(triggerClass);
+          }
           
           // put content in the second panel
           // this pulls content from within the triggering element
@@ -333,7 +341,7 @@
         },
         // removes the plugin
         destroy: function () {
-          console.log('destroying overlyaypanels');
+          // console.log('destroying overlyaypanels');
         }
     });
 
