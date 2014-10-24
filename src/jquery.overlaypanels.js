@@ -238,9 +238,10 @@
           
           var panelOptions, P1Pos, settings = ev.data.overlay.settings, overlay = $('#' + settings.opPanelTwo), 
           panelOne = $('#' + settings.opPanelOne), cover = settings.overlayCover, displayFx = settings.opPanelTwofx,
-          triggerClass = settings.opPanelTwoClass;
-          
-          
+          triggerClass = 'panel-two-expanded';
+
+          // Remove class from all triggering elements.
+          $('#' + settings.opPanelOne).find(settings.opPanelTwoTrigger).removeClass(triggerClass);
           // put the class on the triggering element
           if($(this).hasClass(triggerClass) == false) {
             $(this).addClass(triggerClass);
