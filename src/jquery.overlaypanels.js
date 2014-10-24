@@ -242,7 +242,7 @@
           
           
           // put the class on the triggering element
-          if($(this).hasClass(triggerClass) == false {
+          if($(this).hasClass(triggerClass) == false) {
             $(this).addClass(triggerClass);
           }
           
